@@ -61,7 +61,7 @@ img{
     margin: 10px;
 }
 
-/* CSS GRID 1 */
+/* SECTION GRID 1 */
 
 .grid1{
     display: grid;
@@ -99,7 +99,7 @@ img{
     }
 }
 
-/* CSS Grid 2 */
+/* SECTION GRID 2 */
 
 .grid2{
     display: grid;
@@ -127,4 +127,39 @@ img{
         flex:1 0 200 px;
         margin: 0 10px;
     }
+}
+
+/* SECTION GRID 3 */
+.grid3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 10px;
+    align-items: center;
+}
+
+.grid3-item:nth-child(1){
+    grid-row: 1 / 3;
+}
+
+.grid3-item{
+    display: grid;
+}
+
+.grid3-item img{
+    grid-column: 1;
+    grid-row: 1/3;
+    align-self: end;
+}
+
+
+.grid3-item p{
+    background-color: rgba(0,0,0,0.6);
+    padding: 10px;
+    color: white;
+    grid-column: 1;
+    grid-row: 2;
+    align-self: end;
 }
